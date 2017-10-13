@@ -20,7 +20,7 @@
 
 #If there is no matching day/date that year, Marty is stuck in the past and you will need to return the following string: "Doc, I can't get back to the future!"
 
-#If there are two possible return dates, return the soonest.
+#If there are two possible return dates, return the soonest
 
 
 def back_to_the_future(str)
