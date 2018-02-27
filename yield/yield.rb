@@ -53,3 +53,12 @@ p [1, 2, 3].new_each { |x| x + x }
 # ('2', '4', '6')
 p [1, 2, 3].new_each { |x| x * 4 }
 # ('4', '8', '12')
+
+
+
+#### yield_self
+
+add_greeting = -> (string) { "HELLO " + string }
+upper = -> (string) { string.upcase }
+
+'World'.yield_self(&upper).yield_self(&add_greeting)
