@@ -25,3 +25,14 @@ end
 product = total_product(1..10)
 print 'total product: '
 puts product
+
+
+def join(seporator, range)
+  insurt_between_each('', range) do |total, x|
+    total + seporator + x
+  end[1..-1]
+end
+
+az = join(' ', 'a'..'z')
+print 'alphabet: '
+puts az
